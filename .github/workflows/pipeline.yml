@@ -99,7 +99,6 @@ jobs:
 
       - name: iniciar server
         run: |
-          rm main.py # Force use of installed wheel
           uv run uvicorn main:app \
           --port 8000 \
           --host 0.0.0.0 \
